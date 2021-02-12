@@ -8,6 +8,13 @@ public class Pattern {
 		
 		int len = str.length();
 		
+		if(len == 1)
+		{
+			System.out.println(str);
+			sc.close();
+			return;
+		}
+		
 		StringBuilder result = new StringBuilder();
 		result.append(str.charAt(len/2));
 		
