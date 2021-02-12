@@ -19,12 +19,12 @@ public class Pattern {
 		result.append(str.charAt(len/2));
 		
 		int i = (len/2)+1;
-		
+		int space = 0;
 		while(i != (len/2))
 		{
 			if(i >= len)
 				i = 0;
-			int space = len - result.length();
+			space = len - result.length();
 			for(int x = 0 ; x < space ; x++)
 				System.out.printf(" ");
 			System.out.println(result);
@@ -34,7 +34,7 @@ public class Pattern {
 		}
 		
 		
-		int space = len - result.length();
+		space = len - result.length();
 		for(int x = 0 ; x < space ; x++)
 			System.out.printf(" ");
 		System.out.println(result);
